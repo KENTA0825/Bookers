@@ -47,7 +47,7 @@ end
 
 
 def destroy
-    @book = Task.find(params[:id])
+    @book = Book.find(params[:id])
     @book.destroy
     redirect_to books_url
     
